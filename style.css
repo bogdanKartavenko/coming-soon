@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #CC92C2;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 32px;
+}
+
+.link {
+    transition: transform 0.5s;
+}
+.link:hover {
+    transform: scale(1.1);
+}
+
+.img {
+    max-width: 550px;
+}

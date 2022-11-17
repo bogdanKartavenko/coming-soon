@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+    padding: 43px 56px;
+    background-image: url(../img/BG.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 178px;
+}
+
+.logo {
+    width: 148px;
+    cursor: pointer;
+}
+
+.title,
+.subtitle,
+.form {
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: white;
+    max-width: 202px;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #959D9E;
+    max-width: 237px;
+    width: 100%;
+    margin-bottom: 74px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 470px;
+    width: 100%;
+}
+
+.input {
+    background-color: transparent;
+    padding: 16px;
+    max-width: 360px;
+    margin-right: 8px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #31333E;
+    border-radius: 7px;
+    outline: none;
+    color:white
+}
+
+.input:hover,
+.input:focus,
+.input:active {
+    border: 1px solid #5484FF;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 16px;
+    max-height: 48px;
+    min-width: 94px;
+    background: #5484FF;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0CC3CF;
+}
+
+.button:focus {
+    outline: 1px solid #FFFFFF;
+}
+
+@media screen and (max-width: 500px) {
+
+    .wrapper {
+        padding: 33px 16px;
+    }
+}
