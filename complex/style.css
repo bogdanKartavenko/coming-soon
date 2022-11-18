@@ -8,8 +8,8 @@
 }
 
 .wrapper {
-    /* background-image: url(../img/BGcomplex.png); */
-    background-color: #214F4B;
+    background-image: url(../img/BGcomplex.png);
+    background-size: cover;
     min-height: 100vh;
     padding: 38px 64px;
 }
@@ -48,25 +48,13 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
-}
-
-.form:hover {
-    background-color: #22232F;
-    outline: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.form:focus {
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.form:active {
-    color: white;
+    position: relative;
 }
 
 .input__email {
-    max-width: 306px;
     width: 100%;
     height: 56px;
+    border-radius: 70px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -74,12 +62,17 @@
     border: none;
     outline: none;
     background-color: transparent;
-    padding: 15px 24px;
+    padding: 15px 140px 15px 24px;
+    position: absolute;
+    z-index: 3;
+    left: 0;
 }
 
 .input__email:focus,
-.input__email:active {
+.input__email:active,
+.input__email:hover {
     color: white;
+    outline: 1px solid #2D2E39;
 }
 
 .input__button {
@@ -94,6 +87,9 @@
     padding: 12px 24px;
     border: none;
     cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    right: 4px;
 }
 
 .input__button:hover {
